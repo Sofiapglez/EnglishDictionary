@@ -1,3 +1,7 @@
+package net.duolingo;
+
+import net.duolingo.diccionario.PalabrasPorInicial;
+
 import java.util.Scanner;
 
 public class Main {

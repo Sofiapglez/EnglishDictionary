@@ -1,3 +1,5 @@
+package net.duolingo.diccionario;
+
 import java.util.*;
 
 public class PalabrasPorInicial {
@@ -6,7 +8,9 @@ public class PalabrasPorInicial {
     public PalabrasPorInicial() {
         palabrasPorInicial = new HashMap<>();
     }
-
+    private String sanitizarPalabra(String palabra) {
+        return palabra.toLowerCase().trim();
+    }
     public void agregarPalabra(String palabra) {
         palabra = sanitizarPalabra(palabra);
 
@@ -77,8 +81,6 @@ public class PalabrasPorInicial {
         System.out.println("Palabras que empiezan por '" + inicial + "': " + palabras);
     }
 
-    private String sanitizarPalabra(String palabra) {
-        return palabra.toLowerCase().trim();
-    }
+
 
 }
